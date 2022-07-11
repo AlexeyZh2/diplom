@@ -1,5 +1,6 @@
 <template>
-    <li class="elements__item">
+<h1>Yt ds[jlbn gjrf]</h1>
+    <!-- <li class="elements__item">
         <button class="elements__delete"
             type="button"></button>
         <img src="#" alt="Фото"
@@ -13,10 +14,11 @@
                     0</p>
             </div>
         </div>
-    </li>
+    </li> -->
 </template>
 <script>
 export default {
+    props:['item'],
     data: function () {
         return {
 
@@ -26,7 +28,11 @@ export default {
     methods: {
 
     },
+}
 </script>
 <style>
 @import '../../public/pages/index.css';
+h1 {
+    color: yellow;
+}
 </style>

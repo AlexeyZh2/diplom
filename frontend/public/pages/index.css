@@ -26,6 +26,9 @@
 @import url(../blocks/popup/__image/popup__image.css);
 @import url(../blocks/popup/__image-container/popup__image-container.css);
 @import url(../blocks/popup/__image-name/popup__image-name.css);
+@import url(../blocks/popup/__auth-container/popup__auth-container.css);
+@import url(../blocks/popup/__auth-image/popup__auth-image.css);
+@import url(../blocks/popup/__auth-text/popup__auth-text.css);
 @import url(../blocks/form/__title/form__title.css);
 @import url(../blocks/form/__save-button/form__save-button.css);
 @import url(../blocks/form/__input/form__input.css);
