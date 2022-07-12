@@ -11,7 +11,7 @@
                 placeholder="Пароль"
                 v-model="password">
             <button 
-                v-on:click="authorization" >Войти</button><router-link class="form-link" to="/signup">Зарегистрироваться</router-link>
+                v-on:click.prevent="authorization" type="submit">Войти</button><router-link class="form-link" to="/signup">Зарегистрироваться</router-link>
         </form>
         
     </div>
@@ -51,14 +51,9 @@ export default {
                     if (data.token) {
                         localStorage.setItem('jwt', data.token);
                         this.$router.push('/')
-                         return data;
                     }
                 })
         }, 
-        redirect () {
-            if (localStorage.getItem('jwt'))
-                     this.$router.push('/')      
-                },
 }
     }
 </script>
@@ -68,7 +63,6 @@ export default {
     color: white;
     margin: 80px auto;
     text-align: center;
-
 }
 
 input {
